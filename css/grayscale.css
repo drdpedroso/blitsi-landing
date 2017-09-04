@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Grayscale v4.0.0-beta (http://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstrap - Grayscale v4.0.0-beta (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
@@ -8,8 +8,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black; }
+  color: black;
+  background-color: white; }
 
 html {
   width: 100%;
@@ -93,6 +93,10 @@ a {
         #mainNav .nav-link.active:hover {
           color: white; } }
 
+div .intro-body .mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999; }
+
 .masthead {
   display: table;
   width: 100%;
@@ -100,7 +104,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/intro-bg.jpg") no-repeat center;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -112,7 +116,11 @@ a {
     .masthead .intro-body .brand-heading {
       font-size: 50px; }
     .masthead .intro-body .intro-text {
-      font-size: 18px; }
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff; }
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
@@ -120,7 +128,27 @@ a {
       .masthead .intro-body .brand-heading {
         font-size: 100px; }
       .masthead .intro-body .intro-text {
-        font-size: 22px; } }
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff; } }
+
+.mail-label {
+  margin: auto;
+  width: 100%;
+  font-family: Roboto; }
+
+.email-input {
+  font-family: Roboto;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
+  height: 60px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  margin: auto auto 35px; }
 
 .btn-circle {
   font-size: 26px;
@@ -147,7 +175,7 @@ a {
 .download-section {
   color: white;
   background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  background-color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -165,23 +193,44 @@ a {
     height: 350px; } }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 0; }
+  text-transform: uppercase; }
+
+.btn-hero {
+  height: 65px;
+  border-radius: 2px;
+  background-color: #00c853;
+  width: 70%;
+  margin: auto;
+  min-height: 50px;
+  font-size: 20px; }
+
+.btn-hero-stroke {
+  width: 400px;
+  height: 60px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid 2px #ffffff; }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: #fff;
+  border: 1px solid #fff;
   background-color: transparent; }
-  .btn-default:focus, .btn-default:hover {
-    color: black;
-    border: 1px solid #42DCA3;
-    outline: none;
-    background-color: #42DCA3; }
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  border: 1px solid #BAB9B9;
+  outline: none;
+  background-color: #BAB9B9; }
 
 ul.banner-social-buttons {
   margin-top: 0; }

@@ -15,6 +15,7 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
@@ -26,7 +27,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Blitsi</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,21 +45,23 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Intro Header -->
     <header class="masthead">
-      <div class="intro-body">
+      <div class="intro-body mask" style="background-color: rgba(0, 0, 0, 0.6);z-index: 999;">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Blitsi</h1>
-              <p class="intro-text">Venda seu imóvel pagamento apenas metade da comissão!
-                <br>Seu imóvel anunciado nos maiores portais do Brasil</p>
+            <div class="col-lg-8 mx-auto" style="height:100%">
+              <h1 class="brand-heading" style="font-size: 68px;">Blitsi</h1>
+              <p class="intro-text">Anuncie seu imóvel de graça nos maiores portais do Brasil e
+                venda pagando apenas metade da comissão</p>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" style="width: 45%;margin: auto;" placeholder="Digite seu email aqui">
+                  <label class="mail-label"> Informe seu e-mail e seja um dos primeiros a aproveitar a novidade! </label>
+                  <input type="email" id="email" class="form-control email-input" id="email" style="width: 70%;margin: auto auto -7px;;min-height: 50px;" placeholder="Digite seu email aqui">
                 </div>
-                <button type="button" class="btn btn-success">REGISTRAR</button>
+                <button type="button" class="btn btn-hero" style="width: 70%;margin: auto" onClick="http(document.querySelector('#email').value)">CADASTRAR</button>
+                <button type="button" class="btn btn-default" style="width: 70%;margin: 30px auto;min-height: 50px;">QUERO SABER COMO FUNCIONA</button>
             </div>
           </div>
         </div>
@@ -74,6 +77,11 @@
             <p>Faça apenas um simples cadastro e nós cuidados de tudo até o seu imóvel ser vendido, desde anunciá-lo nos maiores portais até preparar toda a papelada necessária para a venda.
           </div>
         </div>
+      </div>
+    </section>
+    <hr/>
+    <section>
+      <div class="container" class="content-section text-center">
         <div class="row">
           <div class="col-lg-4 mx-auto">
             <i class="fa fa-address-book fa-5x" aria-hidden="true"></i>
@@ -151,6 +159,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="js/http.js"></script>
 
   </body>
 
