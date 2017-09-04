@@ -60,8 +60,10 @@
                   <label class="mail-label"> Informe seu e-mail e seja um dos primeiros a aproveitar a novidade! </label>
                   <input type="email" id="email" class="form-control email-input" id="email" style="width: 70%;margin: auto auto -7px;;min-height: 50px;" placeholder="Digite seu email aqui">
                 </div>
-                <button type="button" class="btn btn-hero" style="width: 70%;margin: auto" onClick="http(document.querySelector('#email').value)">CADASTRAR</button>
-                <button type="button" class="btn btn-default" style="width: 70%;margin: 30px auto;min-height: 50px;">QUERO SABER COMO FUNCIONA</button>
+                <div id="success-top" style="display:none;color:#fff;font-size: 20px; font-family: Roboto; margin-bottom: 5px;"> Cadastro realizado com sucesso! :) </div>
+                <div id="error-top" style="display:none;color:#ff0000;font-size: 20px; font-family: Roboto; margin-bottom: 5px;"> Algo deu errado :( </div>
+                <button type="button" class="btn btn-hero" style="width: 70%;margin: auto" onClick="http(document.querySelector('#email').value, 'top')">CADASTRAR</button>
+                <button type="button" class="btn btn-default" style="width: 70%;margin: 30px auto;min-height: 50px;" onCLick="location.href='#about'">QUERO SABER COMO FUNCIONA</button>
             </div>
           </div>
         </div>
@@ -74,70 +76,57 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Como funciona?</h2>
-            <p>Faça apenas um simples cadastro e nós cuidados de tudo até o seu imóvel ser vendido, desde anunciá-lo nos maiores portais até preparar toda a papelada necessária para a venda.
+            <p class="content-text">Nós descomplicamos o processo de venda do seu imóvel e cuidamos de tudo, desde o anúncio até toda a papelada necessária para a concretização do negócio.
+              A partir de um cadastro simples, seu imóvel é anunciado nos principais portais imobiliários do Brasil, garantindo grande visibilidade com menos esforço e pagando apenas a comissão – ou melhor: apenas a metade dela.
           </div>
         </div>
       </div>
     </section>
-    <hr/>
+    <hr style="margin-left:50px; margin-right: 50px"/>
     <section>
-      <div class="container" class="content-section text-center">
+      <div class="container content-section text-center">
         <div class="row">
-          <div class="col-lg-4 mx-auto">
-            <i class="fa fa-address-book fa-5x" aria-hidden="true"></i>
-            <p><h4>Anúncie gratuitamente</h4></p>
-            <p>Nós não cobramos nada para você anunciar seu imóvel. Somente pague quando seu imóvel for vendido!</p>
+          <div class="col-lg-4 mx-auto" style="text-align:center">
+            <i class="fa fa-mobile fa-5x" style="color:#00c853;" aria-hidden="true"></i>
+            <p><h4>ANUNCIE GRATUITAMENTE</h4></p>
+            <p class="item-desc">Nós não cobramos nada pelo anúncio.
+              Você só paga se seu imóvel for vendido, e apenas a metade da comissão praticada por imobiliárias e corretoras.</p>
           </div>
-          <div class="col-lg-4 mx-auto">
-            <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
-            <p><h4>Receba propostas</h4></p>
-            <p>Não se preocupe em responder contatos de interessados ou em ir mostrar o imóvel. Nós cuidamos de tudo e voce recebe somente as propostas de interessados em comprar o imóvel.</p>
+          <div class="col-lg-4 mx-auto" style="text-align:center">
+            <i class="fa fa-comments-o fa-5x" style="color:#00c853;" aria-hidden="true"></i>
+            <p><h4>RECEBA E AVALIE PROPOSTAS
+                
+                </h4></p>
+            <p class="item-desc">Não se preocupe em responder todos os contatos. Nós cuidamos de tudo e você recebe somente as propostas de interessados em comprar o imóvel.</p>
           </div>
-          <div class="col-lg-4 mx-auto">
-            <i class="fa fa-usd fa-5x" aria-hidden="true"></i>
-            <p><h4>Aceite uma proposta e receba o dinheiro</h4></p>
-            <p>Após aceitar uma proposta nós cuidamos de toda papelada burocrática para que voce não tenha nenhum trabalho para concluir a venda.</p>
+          <div class="col-lg-4 mx-auto" style="text-align:center">
+            <i class="fa fa-usd fa-5x" style="color:#00c853;" aria-hidden="true"></i>
+            <p><h4>ACEITE E RECEBA O DINHEIRO</h4></p>
+            <p class="item-desc">Assim que encontrar uma proposta que faça sentido para você, basta aceitar.
+                A partir daí, nós cuidamos de toda a parte burocrática para efetivar o negócio.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
-            <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-              on Start Bootstrap to give some feedback about this theme!</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+    <hr style="margin-left:50px; margin-right: 50px"/>
+    <section>
+      <div class="container content-section text-center">
+        <div class="footer-title">
+            Quer ser um dos primeiros a aproveitar a novidade?
         </div>
+        <div class="footer-subtitle">
+            Informe seu e-mail abaixo e seja um dos primeiros a anúnciar e vender de forma mais rápida.
+        </div>
+        <div class="form-group">
+          <input type="email" id="email-bottom" class="form-control email-input-bottom" placeholder="Digite seu email aqui">
+          <button type="button" class="btn btn-hero" style="width: 70%;" onClick="http(document.querySelector('#email-bottom').value, 'bottom')">CADASTRAR</button>
+        </div>
+        <div id="success-bottom" style="display:none;color:#00c853;font-size: 20px; font-family: Roboto"> Cadastro realizado com sucesso! :) </div>
+        <div id="error-bottom" style="display:none;color:#ff0000;font-size: 20px; font-family: Roboto;"> Algo deu errado :( </div>
       </div>
-    </section> -->
+    </section>
 
-     <!-- Map Section 
-    <div id="map"></div> -->
 
     <!-- Footer -->
     <footer>
