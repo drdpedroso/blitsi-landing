@@ -19,8 +19,10 @@ var http = function (email, place) {
     xhttp.onload = function () {
         if (xhttp.status == 200 && place == 'bottom') {
             document.querySelector('#success-bottom').style.display = 'block'
+            document.querySelector('#button-bottom').style.display = 'none'  
         } else if (xhttp.status == 200 && place == 'top') {
             document.querySelector('#success-top').style.display = 'block'
+            document.querySelector('#button-top').style.display = 'none'  
         } else {
             document.querySelector('#error-top').style.display = 'block'
             document.querySelector('#error-bottom').style.display = 'block'

@@ -62,8 +62,9 @@
                 </div>
                 <div id="success-top" style="display:none;color:#fff;font-size: 20px; font-family: Roboto; margin-bottom: 5px;"> Cadastro realizado com sucesso! :) </div>
                 <div id="error-top" style="display:none;color:#ff0000;font-size: 20px; font-family: Roboto; margin-bottom: 5px;"> Algo deu errado :( </div>
-                <button type="button" class="btn btn-hero" style="width: 70%;margin: auto" onClick="http(document.querySelector('#email').value, 'top')">CADASTRAR</button>
-                <button type="button" class="btn btn-default" style="width: 70%;margin: 30px auto;min-height: 50px;" onCLick="location.href='#about'">QUERO SABER COMO FUNCIONA</button>
+                <button type="button" id="button-top" class="btn btn-hero" style="width: 70%;margin: auto" onClick="http(document.querySelector('#email').value, 'top')">CADASTRAR</button>
+                <a type="button" class="btn btn-default js-scroll-trigger" style="width: 70%;margin: 30px auto;min-height: 50px;font-size: 18px;" 
+                   href="#about">QUERO SABER COMO FUNCIONA</a>
             </div>
           </div>
         </div>
@@ -120,7 +121,7 @@
         </div>
         <div class="form-group">
           <input type="email" id="email-bottom" class="form-control email-input-bottom" placeholder="Digite seu email aqui">
-          <button type="button" class="btn btn-hero" style="width: 70%;" onClick="http(document.querySelector('#email-bottom').value, 'bottom')">CADASTRAR</button>
+          <button type="button" id="button-bottom" class="btn btn-hero" style="width: 70%;" onClick="http(document.querySelector('#email-bottom').value, 'bottom')">CADASTRAR</button>
         </div>
         <div id="success-bottom" style="display:none;color:#00c853;font-size: 20px; font-family: Roboto"> Cadastro realizado com sucesso! :) </div>
         <div id="error-bottom" style="display:none;color:#ff0000;font-size: 20px; font-family: Roboto;"> Algo deu errado :( </div>
