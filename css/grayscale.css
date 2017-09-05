@@ -16,7 +16,7 @@ html {
   height: 100%; }
 
 h4 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-weight: bolder;
   text-align: center;
@@ -54,14 +54,14 @@ a {
     color: #1d9b6c; }
 
 .item-desc {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
   color: rgba(0, 0, 0, 0.87); }
 
 .footer-title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 29px;
   font-weight: 500;
   text-align: center;
@@ -72,7 +72,7 @@ a {
   margin: auto; }
 
 .footer-subtitle {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   margin-top: 10px;
   text-align: center;
@@ -148,7 +148,7 @@ div .intro-body .mask {
     .masthead .intro-body .brand-heading {
       font-size: 50px; }
     .masthead .intro-body .intro-text {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
       font-weight: bold;
       text-align: center;
@@ -160,7 +160,7 @@ div .intro-body .mask {
       .masthead .intro-body .brand-heading {
         font-size: 100px; }
       .masthead .intro-body .intro-text {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-size: 24px;
         font-weight: bold;
         text-align: center;
@@ -169,10 +169,10 @@ div .intro-body .mask {
 .mail-label {
   margin: auto;
   width: 100%;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto', sans-serif; }
 
 .email-input {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   width: 70%;
   font-size: 20px;
@@ -183,7 +183,7 @@ div .intro-body .mask {
   margin: auto auto 35px; }
 
 .email-input-bottom {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   width: 70%;
   font-size: 20px;
@@ -216,7 +216,7 @@ div .intro-body .mask {
   padding-bottom: 30px; }
 
 .content-text {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
