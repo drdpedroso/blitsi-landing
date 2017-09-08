@@ -6,7 +6,7 @@
 
 .top-banner {
     display: table;
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 200px 0;
     text-align: center;
@@ -21,7 +21,8 @@
 
 @media (max-width: 768px){
     .top-banner{
-        height: 80%;            
+        background-position: 12% 20%;
+        height: 120px;
     }
     .email-top-label{
         width: 312px;
@@ -32,10 +33,17 @@
         color: #ffffff;
         margin: 10px auto !important;
     }
+    .title-text{
+        margin: 30px auto;
+        font-size: 36px;
+    }
     .subtitle-text{
+        font-size: 16px;
+        max-width: 370px;
         margin-bottom: 37px;
     }
     .btn-success{
+        width: 79%;
         height: 44px;
         margin-top: 5px;
         text-align: center;
@@ -44,6 +52,7 @@
         margin: auto;
     }
     .btn-stroke{
+        width: 78%;
         height: 44px;
         margin-top: 20px;
         text-align: center;
@@ -52,13 +61,54 @@
         margin: auto;
     }
     .email-input{
+        width: 79%;     
         font-size: 15px;
         height: 44px;
     }
 }
 
 @media (min-width: 768px){
-
+    .top-banner {
+        height: 200px;
+        background-position: 30% 20%; 
+    }
+    .email-top-label{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .title-text{
+        margin: 50px auto;
+        font-size: 48px;
+    }
+    .subtitle-text{
+        font-family: 'Roboto' sans-serif;
+        width: 660px;
+        height: 56px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom:38px;
+    }
+    .email-input{
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+        width: 400px;
+        height: 50px;
+    }
+    .btn-success{
+        margin: 10px auto;
+        width: 400px;
+        height: 60px;
+        border-radius: 2px;
+        background-color: #00c853;
+    }
+    .btn-stroke {
+        margin-top: 30px;
+        width: 400px;
+        height: 60px;
+    }
 }
 
 .layer {
@@ -71,18 +121,15 @@
 }
 
 .title-text {
-    margin: 30px auto;
     font-family: 'OpenSans' sans-serif;
-    font-size: 36px;
+    /* font-size: 36px; */
     font-weight: bold;
     text-align: center;
     color: #ffffff;
 }
 
 .subtitle-text {
-    max-width: 370px;
     padding: 10px;
-    font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
@@ -94,7 +141,6 @@
     border-radius: 2px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
-    width: 79%; 
     margin: auto !important;
 }
 
@@ -110,7 +156,6 @@
     display: flex;
     border-radius: 2px;
     background-color: #00c853;
-    width: 79%;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -125,7 +170,6 @@
 .btn-stroke {
     display: flex;
     border-radius: 2px;
-    width: 78%;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
