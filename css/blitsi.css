@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: 'Roboto' sans-serif;
+}
+
+.top-banner {
+    display: table;
+    position: absolute;
+    width: 100%;
+    padding: 200px 0;
+    text-align: center;
+    color: white;
+    background: url("../img/intro-bg.jpg") no-repeat center;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+@media (max-width: 768px){
+    .top-banner{
+        height: 80%;            
+    }
+    .email-top-label{
+        width: 312px;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+        margin: 10px auto !important;
+    }
+    .subtitle-text{
+        margin-bottom: 37px;
+    }
+    .btn-success{
+        height: 44px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .btn-success span{
+        margin: auto;
+    }
+    .btn-stroke{
+        height: 44px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn-stroke span{
+        margin: auto;
+    }
+    .email-input{
+        font-size: 15px;
+        height: 44px;
+    }
+}
+
+@media (min-width: 768px){
+
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title-text {
+    margin: 30px auto;
+    font-family: 'OpenSans' sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle-text {
+    max-width: 370px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.email-input{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.38);
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+    width: 79%; 
+    margin: auto !important;
+}
+
+.top-form {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-success {
+    display: flex;
+    border-radius: 2px;
+    background-color: #00c853;
+    width: 79%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    transition: .1s all linear;
+}
+
+.btn-success:hover {
+    background-color: #00aa4a;
+}
+
+.btn-stroke {
+    display: flex;
+    border-radius: 2px;
+    width: 78%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    transition: .1s all linear;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 2px #ffffff;
+}
