@@ -8,6 +8,11 @@ body {
     font-family: 'Roboto' sans-serif;
 }
 
+.center {
+    margin:auto;
+    text-align:center
+}
+
 .top-banner {
     display: table;
     position: relative;
@@ -26,16 +31,43 @@ body {
 .how-it-works-title {
     font-family: 'Roboto' sans-serif;
     margin: auto;
+    color: rgba(0, 0, 0, 0.87);    
+}
+
+.how-it-works-text{
+    color: rgba(0, 0, 0, 0.87);    
 }
 
 .text-center {
     text-align: center;
 }
 
+.img-title {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.img-subtitle{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
 @media (max-width: 768px){
     .top-banner{
         background-position: 12% 20%;
         height: 120px;
+    }
+    .img-title {
+        margin: 20px auto;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .img-subtitle {
+        width: 312px;
+        height: 88px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 1.57;
     }
     .email-top-label{
         width: 312px;
@@ -83,14 +115,12 @@ body {
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        color: rgba(0, 0, 0, 0.87);
     }
     .how-it-works-text {
         width: 312px;
         height: 105px;
         font-size: 14px;
         line-height: 1.57;
-        color: rgba(0, 0, 0, 0.87);
     }
 }
 
@@ -98,6 +128,18 @@ body {
     .top-banner {
         height: 200px;
         background-position: 30% 20%; 
+    }
+    .img-title {
+        margin: 20px auto;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .img-subtitle {
+        width: 280px;
+        height: 96px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 1.6;
     }
     .email-top-label{
         font-size: 13px;
@@ -139,6 +181,22 @@ body {
     .divider {
         margin-left:50px; 
         margin-right: 50px
+    }
+    .how-it-works-title {
+        margin: 40px auto 20px auto;
+        font-size: 24px;        
+        font-weight: bold;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    .how-it-works-text {
+        width: 600px;
+        height: 65px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .divider {
+        margin: 30px;
     }
 }
 
