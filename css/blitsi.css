@@ -13,6 +13,10 @@ body {
     text-align:center
 }
 
+.margin-bottom-20 {
+    margin-bottom:20px;
+}
+
 .top-banner {
     display: table;
     position: relative;
@@ -52,10 +56,42 @@ body {
     color: rgba(0, 0, 0, 0.87);
 }
 
+.bottom-title{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.bottom-subtitle{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+}
+.bottom-input {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 2px #00c853;
+    text-align: center;
+}
+
 @media (max-width: 768px){
     .top-banner{
         background-position: 12% 20%;
         height: 120px;
+    }
+    .bottom-title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 312px;
+        height: 48px;
+    }
+    .bottom-subtitle{
+        width: 312px;
+        height: 57px;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    .bottom-input {
+        width: 288px;
+        height: 44px;
     }
     .img-title {
         margin: 20px auto;
@@ -88,7 +124,7 @@ body {
         margin-bottom: 37px;
     }
     .btn-success{
-        width: 312px;
+        width: 291px;
         height: 44px;
         margin-top: 5px;
         text-align: center;
@@ -97,7 +133,7 @@ body {
         margin: auto;
     }
     .btn-stroke{
-        width: 312px;
+        width: 287px;
         height: 44px;
         margin-top: 20px;
         text-align: center;
@@ -106,7 +142,7 @@ body {
         margin: auto;
     }
     .email-input{
-        width: 312px;
+        width: 291px;
         font-size: 15px;
         height: 44px;
     }
@@ -121,6 +157,9 @@ body {
         height: 105px;
         font-size: 14px;
         line-height: 1.57;
+    }
+    .divider{
+        margin: 20px auto;
     }
 }
 
@@ -179,8 +218,7 @@ body {
         height: 60px;
     }
     .divider {
-        margin-left:50px; 
-        margin-right: 50px
+        margin: 30px;
     }
     .how-it-works-title {
         margin: 40px auto 20px auto;
@@ -194,9 +232,6 @@ body {
         height: 65px;
         font-size: 15px;
         line-height: 1.6;
-    }
-    .divider {
-        margin: 30px;
     }
 }
 
