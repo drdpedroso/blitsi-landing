@@ -34,10 +34,10 @@
           <form class="top-form pure-form pure-form-stacked">
             <div>
               <label class="email-top-label">Informe seu e-mail e seja um dos primeiros a aproveitar a novidade!</label>
-              <input class="email-input" type="email" placeholder="Digite aqui o seu e-mail">
+              <input class="email-input" type="email" id="email" placeholder="Digite aqui o seu e-mail">
             </div>
             <div>
-              <div class="btn btn-success"><span> CADASTRAR </span></div>
+              <div class="btn btn-success" onClick="http(document.querySelector('#email').value, 'top')"><span> CADASTRAR </span></div>
             </div>
           </form>
           <div class="btn btn-stroke"><span> QUERO SABER COMO FUNCIONA </span></div>
@@ -93,8 +93,8 @@
             Informe seu e-mail abaixo e seja um dos primeiros a anúnciar e vender de forma mais rápida.
         </div>
         <div>
-          <input class="bottom-input" placeholder="Digite aqui o seu e-mail"/>
-          <div class="btn btn-success"><span> CADASTRAR </span></div>
+          <input class="bottom-input" id="email-bottom" placeholder="Digite aqui o seu e-mail"/>
+          <div class="btn btn-success" onClick="http(document.querySelector('#email-bottom').value, 'bottom')"><span> CADASTRAR </span></div>
         </div>
       </div>
     </section>
